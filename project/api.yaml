@@ -1,0 +1,14 @@
+telegram:
+  api-url: "https://api.telegram.org/"
+  webhook-path: "https://<...>.ngrok.io"
+  bot-name: "<@Имябота>"
+  bot-token: "<токен бота>"
+spring:
+  redis:
+    database: 0
+    host: "<...>.compute-1.amazonaws.com"
+    port: "<5 цифр>"
+    password: "<длинный пароль>"
+    ssl: true
+server:
+  port: "<порт, который передавался в ngrok в качестве параметра>"
