@@ -14,16 +14,20 @@ Winners in each category will get a chance to finish their bots and integrate in
 - margretr (meadowse) - Database Administrator. 
 ---
 # Development
-- Project
-- Prototype
-- Presentation
-- Bugs
-- Not implemented
+- [Project](#project)
+- [Prototype](#prototype)
+- [Presentation](#presentation)
+- [Bugs](#bugs)
+- [Not implemented](#not-implemented)
 
 ## Project
 This is our first big project and first serious practice with making a Telegram bot. Certain mistakes were made and I would like discuss it alongside with our development way. I'm writing this as an example for anyone who happens to stumble upon this project, merely as a beginning of our portfolios and a chance to reflect on own actions. 
 
-Our team decided to implement the first option as we personally felt a need in a bot like this, additional features were even added (like peer raiting system, school zone map, access to logs for adm). There are two types of menu:
+Our team decided to implement the first option as we personally felt a need in a bot like this, additional features were even added (like peer raiting system, school zone map, access to logs for adm). 
+
+![photo1661039802](https://user-images.githubusercontent.com/111498279/191274395-9aeaa06f-24be-44f3-81f7-0fbfaeceecd8.jpeg)
+
+There are two types of menu:
 1. Administration panel
 2. Student/Abiturient panel
 
@@ -32,6 +36,8 @@ ADM can book (meeting rooms, table games, books, inventory and kitchens), change
 
 ### Student/Abiturient
 Abiturient participates in an intensive school program for 26 days upon which will be decided if this person will continue to study in the school or not. They have less variety of choice (can't book anything except meeting rooms) as abiturients are still not students of the school.
+
+![44018e93-482a-46f4-8119-1da00c9c7295](https://user-images.githubusercontent.com/111498279/191275146-d0ec911d-59ef-435c-9915-90a4b89d10b8.jpeg)
 
 Students are the ones who have passed the intensive program and will be studying in school for the next 1.5-3 years. It should be mentioned that students and abiturients are not allowed to interact, they can't book the same meeting rooms and study next to each other (in order to prevent cheating). That's why we decided to add a zones feature where everyone can look which meeting rooms are allowed for them. As these zones change every time (students can allowed on the 2nd floor and next intensive program they will be forced to move to the 3rd floor) ADM can manually change them and even make meeting rooms unavailable for both parties.
 
@@ -48,6 +54,8 @@ margretr (meadowse) performed part with database functions. The database has 4 t
 - Reports. All reports that were send by students and abiturients. Peers can see their own reports and their status (checked by ADM or not) while ADM see all active (not checked) reports. 
 - Users. List of users and info about them (role, campus, status (if person was fired or expelled) and raiting).
 
+![a75fdd17-ace7-4ac2-9983-40df04bd88e6](https://user-images.githubusercontent.com/111498279/191274785-e4f370ba-2f5b-4dc3-8129-212b8616c30b.jpeg)
+
 ## Presentation
 
 Thanks to julietta (williamc) and donnlind (leggeedi) for working on this part, they did a good job. Unfortunately, the public hasn't seen our work as we didn't get to Final. Due to lack of communication we weren't prepared for experts to check our projects the way they did (task didn't state how log in should be implemented and ADM didn't say when we have to start deploying our bots). I think that we could have competed with some finalists.
@@ -56,10 +64,11 @@ Thanks to julietta (williamc) and donnlind (leggeedi) for working on this part, 
 
 - Time check for booking wasn't tested properly, so sometimes it doesn't accept valid values.
 - Sometimes bot can get stuck and it can be fixed only with turning bot off and back on.
+- Some parts from Project folder can be outdated as our team has changed after the first day of Weeklython, we made some different choices regarding techincal stack and forgot to change.
 
 ## Not implemented
 
-- Abiturients shouldn't be able book meeting rooms available for students and vice versa.
+- Abiturients mustn't be able book meeting rooms available for students and vice versa.
 - Objects must have a different value status (based on how rare and expensive it is).
 - Bot has to check if user's raiting is enough to book an object (currently it checks only if user has a negative raiting).
 - Different type of authorization in bot with mail.
